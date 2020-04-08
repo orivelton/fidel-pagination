@@ -5,9 +5,13 @@ import idTransactions from './apiSecret/transactions';
 const { id } = idTransactions;
 
 const getData = async () => {
-  const data = await axios.get(`https://api-dev.fidel.uk/v1d/programs/${id}/transactions`, {
+  const response = await axios.get(`https://api-dev.fidel.uk/v1d/programs/${id}/transactions?limit=10`, {
     headers: apiKey
+  }).catch((error) => {
+    console.error('>>>>', error);
   });
+
+  const { data } = response;
   
   return await data;
 }
