@@ -1,9 +1,12 @@
 import React from 'react';
 
 const Modal = ({ openModal, handleModal, currentItem }) => {
-  const {card: { scheme, lastNumbers }} = currentItem;
-  const { location: { address, city, countryCode } } = currentItem;
-  const { identifiers: { MID }} = currentItem;
+  const {
+    card: { scheme, lastNumbers },
+    location: { address, city, countryCode },
+    identifiers: { MID }
+  } = currentItem;
+
   return (
     <div className={openModal ? 'modal is-active' : 'modal'}>
       <div className="modal-background" onClick={handleModal}></div>
