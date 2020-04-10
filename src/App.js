@@ -12,26 +12,22 @@ const App = () => {
   const [currentItem, setCurrentItem] = useState();
 
   useEffect(() => {
+    const fetchData = async () => {
+      const result = await getData(lastTransactions);
+      const { items, last} = result;
+
+      setTransactions(transactions => [...transactions, ...items]);
+      setLastTransactions(last);
+    }
+
     fetchData();
   }, [nextTransactions]);
   
-  const fetchData = async () => {
-    const result = await getData(lastTransactions);
-    const { items, last} = result;
-
-    setTransactions([...transactions, ...items]);
-    setLastTransactions(last);
-  }
-
-
-  
-
   const handleModal = (item) => {
     setOpenModal(!openModal);
     !openModal && setCurrentItem(item);
   };
-
-
+  
   return (
     <>
       <section className="hero">
