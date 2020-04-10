@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component Modal render component Modal 1`] = `
+<div
+  class="modal"
+>
+  <div
+    class="modal-background"
+  />
+  <div
+    class="modal-card"
+  >
+    <header
+      class="modal-card-head"
+    >
+      <p
+        class="modal-card-title"
+      >
+        Scheme: 
+        visa
+      </p>
+      <button
+        aria-label="close"
+        class="delete"
+      />
+    </header>
+    <section
+      class="modal-card-body"
+    >
+      <address>
+        Address: 
+        Google Street 4, Angular4 - undefined
+      </address>
+      <p>
+        Last Numbers: 
+        4009
+      </p>
+      <p>
+        MID: 
+        770055002234
+      </p>
+    </section>
+  </div>
+</div>
+`;

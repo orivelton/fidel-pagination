@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component App render component App 1`] = `
+<section
+  class="hero"
+>
+  <div
+    class="hero-body"
+  >
+    <div
+      class="container"
+    >
+      <h1
+        class="title"
+      >
+        Transactions
+      </h1>
+      <ul />
+    </div>
+  </div>
+</section>
+`;

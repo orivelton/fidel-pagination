@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component App render component ItemList 1`] = `
+<li
+  class="tags has-addons panel-block item-list"
+>
+  <span
+    class="tag is-primary is-large is-light"
+  >
+    GBP
+  </span>
+  <span
+    class="tag is-danger is-large is-light"
+  >
+    visa
+  </span>
+  <span
+    class="tag is-light is-large"
+  >
+    <address>
+      Address: 
+      Google Street 4, undefined - undefined
+    </address>
+  </span>
+</li>
+`;
