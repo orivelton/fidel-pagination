@@ -3,7 +3,6 @@ import React from 'react';
 const ItemList = ({currentItem, handleModal}) => {
   const {
     currency,
-    id,
     card: { scheme },
     location: { 
       address,
