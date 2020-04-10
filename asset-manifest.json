@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/fidel-pagination/static/css/main.abe4488e.chunk.css",
+    "main.js": "/fidel-pagination/static/js/main.99884817.chunk.js",
+    "main.js.map": "/fidel-pagination/static/js/main.99884817.chunk.js.map",
+    "runtime-main.js": "/fidel-pagination/static/js/runtime-main.400f864e.js",
+    "runtime-main.js.map": "/fidel-pagination/static/js/runtime-main.400f864e.js.map",
+    "static/css/2.1b8f7479.chunk.css": "/fidel-pagination/static/css/2.1b8f7479.chunk.css",
+    "static/js/2.c27eb272.chunk.js": "/fidel-pagination/static/js/2.c27eb272.chunk.js",
+    "static/js/2.c27eb272.chunk.js.map": "/fidel-pagination/static/js/2.c27eb272.chunk.js.map",
+    "index.html": "/fidel-pagination/index.html",
+    "precache-manifest.f6b050ab777b5b3be30cae4388cc067e.js": "/fidel-pagination/precache-manifest.f6b050ab777b5b3be30cae4388cc067e.js",
+    "service-worker.js": "/fidel-pagination/service-worker.js",
+    "static/css/2.1b8f7479.chunk.css.map": "/fidel-pagination/static/css/2.1b8f7479.chunk.css.map",
+    "static/css/main.abe4488e.chunk.css.map": "/fidel-pagination/static/css/main.abe4488e.chunk.css.map",
+    "static/js/2.c27eb272.chunk.js.LICENSE.txt": "/fidel-pagination/static/js/2.c27eb272.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.400f864e.js",
+    "static/css/2.1b8f7479.chunk.css",
+    "static/js/2.c27eb272.chunk.js",
+    "static/css/main.abe4488e.chunk.css",
+    "static/js/main.99884817.chunk.js"
+  ]
+}
