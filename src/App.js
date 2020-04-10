@@ -6,23 +6,22 @@ import Modal from './Components/Modal';
 
 const App = () => {
   const [transactions, setTransactions] = useState([]);
-  const [nextTransactions, setNextTransactions] = useState('');
+  const [nextTransactions, setNextTransactions] = useState();
   const [lastTransactions, setLastTransactions] = useState();
   const [openModal, setOpenModal] = useState(false);
   const [currentItem, setCurrentItem] = useState();
 
   useEffect(() => {
-    const fetchData = async () => {
-      const result = await getData(lastTransactions);
-      const { items, last} = result;
-      console.log(items);
-      
-      setTransactions([...transactions, ...items]);
-      setLastTransactions(last);
-    }
-
     fetchData();
   }, [nextTransactions]);
+
+  const fetchData = async () => {
+      const result = await getData(lastTransactions);
+      const { items, last} = result;
+
+      setTransactions(transactions => [...transactions, ...items]);
+      setLastTransactions(last);
+    }
 
   const handleModal = (item) => {
     setOpenModal(!openModal);
@@ -34,7 +33,7 @@ const App = () => {
       <section className="hero">
         <div className="hero-body">
           <div className="container">
-            <h1 class="title">
+            <h1 className="title">
               Transactions
             </h1>
             <ul>
@@ -46,7 +45,7 @@ const App = () => {
                 next={() => setNextTransactions(lastTransactions)}
               >
                 {
-                  transactions.map(item => <ItemList currentItem={item} handleModal={handleModal} />)
+                  transactions.map(item => <ItemList key={item.id} currentItem={item} handleModal={handleModal} />)
                 }
               </InfiniteScroll>
               }
