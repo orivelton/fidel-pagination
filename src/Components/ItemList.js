@@ -1,7 +1,6 @@
 import React from 'react';
 
 const ItemList = ({currentItem, handleModal}) => {
-  debugger;
   const {
     currency,
     card: { scheme },
