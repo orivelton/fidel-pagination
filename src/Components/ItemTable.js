@@ -6,7 +6,7 @@ const ItemTable = ({currency, card, location}) => {
   return (
     <tbody>
       <tr>
-        <td>&#128176; {currency}</td>
+        <td>{currency}</td>
         <td>{scheme}</td>
         <td>{lastNumbers}</td>
         <td>{`${address} ${city} - ${postcode} - ${countryCode}`}</td>
