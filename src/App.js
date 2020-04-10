@@ -30,12 +30,10 @@ const App = () => {
       <section className="hero">
         <div className="hero-body">
           <div className="container">
-            <h1 className="title">
-              Transactions
-            </h1>
+            <h1 className="title">Transactions</h1>
             <ul>
               {
-                transactions && <InfiniteScroll
+                transactions.length > 0 && <InfiniteScroll
                   dataLength={transactions.length}
                   endMessage={<p>Yay! You have seen it all</p>}
                   loader={<progress className="progress is-small is-primary" max="100">50%</progress>}
@@ -49,7 +47,6 @@ const App = () => {
             {currentItem && <Modal openModal={openModal} handleModal={handleModal} currentItem={currentItem}/>}
           </div>
         </div>
-        
       </section>
     </>
   )
