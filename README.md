@@ -1,6 +1,8 @@
 # fidel-pagination
 Fidel Pagination
 
+Demo : Fidel Pagination https://orivelton.github.io/fidel-pagination/
+
 ## Available Scripts
 
 In the project directory, you can run:
